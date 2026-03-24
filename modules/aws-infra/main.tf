@@ -3,6 +3,15 @@
 # VPC + ALB + EC2 Web Server + WireGuard
 # ============================================
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   owners      = ["099720109477"]
@@ -121,7 +130,6 @@ resource "aws_instance" "web" {
     db_password        = var.db_password
     wg_private_key     = var.wg_private_key_ec2
     wg_peer_public_key = var.wg_public_key_proxmox
-    wg_peer_endpoint   = "${var.proxmox_public_ip}:51820"
   })
 
   tags = { Name = "${var.project_name}-web-server" }

@@ -16,7 +16,7 @@ PostDown   = sysctl -w net.ipv4.ip_forward=0
 
 [Peer]
 PublicKey           = ${wg_peer_public_key}
-Endpoint            = ${wg_peer_endpoint}
+# EC2 la server - KHONG can Endpoint (Proxmox se ket noi den EC2)
 AllowedIPs          = 10.0.0.2/32
 PersistentKeepalive = 25
 WGEOF

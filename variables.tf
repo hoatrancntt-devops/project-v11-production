@@ -74,8 +74,3 @@ variable "wg_private_key_proxmox" {
 variable "wg_public_key_proxmox" {
   type = string
 }
-
-variable "proxmox_public_ip" {
-  type        = string
-  description = "Public IP cua Proxmox server (WireGuard Endpoint)"
-}

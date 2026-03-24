@@ -29,7 +29,3 @@ variable "wg_private_key_ec2" {
 variable "wg_public_key_proxmox" {
   type = string
 }
-
-variable "proxmox_public_ip" {
-  type = string
-}

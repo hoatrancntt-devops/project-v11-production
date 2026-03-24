@@ -12,7 +12,6 @@ module "aws_infra" {
   db_password           = var.db_password
   wg_private_key_ec2    = var.wg_private_key_ec2
   wg_public_key_proxmox = var.wg_public_key_proxmox
-  proxmox_public_ip     = var.proxmox_public_ip
 }
 
 module "proxmox_vm" {

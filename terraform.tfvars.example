@@ -26,4 +26,5 @@ wg_public_key_proxmox  = "PROXMOX_PUBLIC_KEY_HERE"
 
 # SSH
 ssh_public_key    = "ssh-ed25519 AAAAC3Nza... your-email@example.com"
-proxmox_public_ip = "YOUR_PROXMOX_PUBLIC_IP"
+# proxmox_public_ip khong can vi Proxmox khong co Public IP
+# EC2 lam server, Proxmox ket noi den EC2 (ec2_public_ip tu dong lay sau khi tao)
