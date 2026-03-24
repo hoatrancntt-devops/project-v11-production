@@ -126,7 +126,6 @@ resource "aws_instance" "web" {
 
   user_data = templatefile("${path.module}/user-data.sh", {
     team_name          = var.team_name
-    db_host            = "10.0.0.2"
     db_password        = var.db_password
     wg_private_key     = var.wg_private_key_ec2
     wg_peer_public_key = var.wg_public_key_proxmox

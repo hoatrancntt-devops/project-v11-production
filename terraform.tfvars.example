@@ -9,8 +9,9 @@ ec2_instance_type = "t3.micro"
 team_name         = "HTG-Team"
 
 # Proxmox
-proxmox_api_url   = "https://192.168.1.10:8006/api2/json"
-proxmox_api_token = "terraform@pam!terraform-token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+proxmox_api_url   = "https://192.168.1.10:8006"
+proxmox_api_token = "terraform@pam!tf-token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# FORMAT: USER@REALM!TOKENID=UUID (lay tu pveum user token add)
 proxmox_node      = "pve"
 vm_ip             = "192.168.1.100/24"
 vm_gateway        = "192.168.1.1"
