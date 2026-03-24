@@ -1,0 +1,16 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+!terraform.tfvars.example
+.terraform.lock.hcl
+
+# Keys - KHONG DUOC COMMIT
+*.key
+*.pem
+id_*
+
+# OS
+.DS_Store
+Thumbs.db

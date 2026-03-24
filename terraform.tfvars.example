@@ -1,0 +1,29 @@
+# =============================================
+# terraform.tfvars.example
+# KHONG commit file terraform.tfvars that!
+# Cac gia tri nay khai bao tren HCP Variables
+# =============================================
+
+aws_region        = "ap-southeast-1"
+ec2_instance_type = "t3.micro"
+team_name         = "HTG-Team"
+
+# Proxmox
+proxmox_api_url   = "https://192.168.1.10:8006/api2/json"
+proxmox_api_token = "terraform@pam!terraform-token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+proxmox_node      = "pve"
+vm_ip             = "192.168.1.100/24"
+vm_gateway        = "192.168.1.1"
+
+# Database
+db_password = "StrongP@ssw0rd!"
+
+# WireGuard (tao bang: wg genkey | tee private.key | wg pubkey > public.key)
+wg_private_key_ec2     = "EC2_PRIVATE_KEY_HERE"
+wg_public_key_ec2      = "EC2_PUBLIC_KEY_HERE"
+wg_private_key_proxmox = "PROXMOX_PRIVATE_KEY_HERE"
+wg_public_key_proxmox  = "PROXMOX_PUBLIC_KEY_HERE"
+
+# SSH
+ssh_public_key    = "ssh-ed25519 AAAAC3Nza... your-email@example.com"
+proxmox_public_ip = "YOUR_PROXMOX_PUBLIC_IP"
