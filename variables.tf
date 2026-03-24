@@ -42,12 +42,12 @@ variable "proxmox_node" {
 
 variable "vm_ip" {
   type    = string
-  default = "192.168.1.100/24"
+  default = "172.199.10.180/24"
 }
 
 variable "vm_gateway" {
   type    = string
-  default = "192.168.1.1"
+  default = "172.199.10.1"
 }
 
 # === Database ===
