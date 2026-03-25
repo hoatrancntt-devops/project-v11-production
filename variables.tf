@@ -74,3 +74,7 @@ variable "wg_private_key_proxmox" {
 variable "wg_public_key_proxmox" {
   type = string
 }
+variable "proxmox_ssh_password" {
+  type      = string
+  sensitive = true
+}
