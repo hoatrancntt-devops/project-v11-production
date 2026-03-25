@@ -78,3 +78,7 @@ variable "proxmox_ssh_password" {
   type      = string
   sensitive = true
 }
+variable "proxmox_ssh_host" {
+  type    = string
+  default = "172.199.10.165"
+}
