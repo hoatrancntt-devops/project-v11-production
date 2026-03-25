@@ -1,6 +1,6 @@
 variable "proxmox_node" {
   type    = string
-  default = "pve"
+  default = "promox2"
 }
 
 variable "vm_hostname" {
