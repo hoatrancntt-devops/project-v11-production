@@ -37,7 +37,7 @@ variable "proxmox_api_token" {
 
 variable "proxmox_node" {
   type    = string
-  default = "pve"
+  default = "promox02"
 }
 
 variable "vm_ip" {

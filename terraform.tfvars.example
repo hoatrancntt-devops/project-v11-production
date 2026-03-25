@@ -9,12 +9,12 @@ ec2_instance_type = "t3.micro"
 team_name         = "HTG-Team"
 
 # Proxmox
-proxmox_api_url   = "https://192.168.1.10:8006"
+proxmox_api_url   = "https://172.199.10.165:8006"
 proxmox_api_token = "terraform@pam!tf-token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 # FORMAT: USER@REALM!TOKENID=UUID (lay tu pveum user token add)
-proxmox_node      = "pve"
-vm_ip             = "192.168.1.100/24"
-vm_gateway        = "192.168.1.1"
+proxmox_node      = "promox02"
+vm_ip             = "172.199.10.180/24"
+vm_gateway        = "172.199.10.1"
 
 # Database
 db_password = "StrongP@ssw0rd!"

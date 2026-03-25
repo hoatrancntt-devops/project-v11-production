@@ -77,9 +77,29 @@ resource "proxmox_virtual_environment_vm" "db_server" {
     user_data_file_id = proxmox_virtual_environment_file.cloud_init.id
   }
 
+  agent {
+    enabled = true
+    timeout = "5m"    # Chờ tối đa 5 phút cho QEMU Guest Agent
+    trim    = false
+    type    = "virtio"
+  }
+
   operating_system {
     type = "l26"
   }
 
+  # Timeout cho việc clone + boot VM
+  timeouts {
+    create = "10m"
+    update = "10m"
+    delete = "5m"
+  }
+
   started = true
+
+  lifecycle {
+    ignore_changes = [
+      initialization[0].user_data_file_id,
+    ]
+  }
 }
