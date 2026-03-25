@@ -89,11 +89,7 @@ resource "proxmox_virtual_environment_vm" "db_server" {
   }
 
   # Timeout cho việc clone + boot VM
-  timeouts {
-    create = "10m"
-    update = "10m"
-    delete = "5m"
-  }
+
 
   started = true
 
